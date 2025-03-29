@@ -12,19 +12,19 @@ Explore whether income or home ownership influences the decision to purchase a b
 ## Data utilized
 ### Bike Buyers 1000: https://www.kaggle.com/datasets/heeraldedhia/bike-buyers
 A practice dataset containing the following columns was used:
-## ID 
-## Marital status 
-## Gender 
-## Income 
-## Children 
-## Education 
-## Occupation 
-## Homeownership 
-## Cars 
-## Travel distance 
-## Region 
-## Age 
-## Bicycle purchased
+#### ID 
+#### Marital status 
+#### Gender 
+#### Income 
+#### Children 
+#### Education 
+#### Occupation 
+#### Homeownership 
+#### Cars 
+#### Travel distance 
+#### Region 
+#### Age 
+#### Bicycle purchased
 
 ## Results and conclusions
 ### Conclusions:
