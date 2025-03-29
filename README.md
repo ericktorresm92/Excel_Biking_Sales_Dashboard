@@ -28,7 +28,7 @@ A practice dataset containing the following columns was used:
 #### Age 
 #### Bicycle purchased
 
-The bike_buys sheet underwent data cleansing and correction, using value replacement to ensure data consistency. From there, the information was migrated to a new tab, and the IF function was used to better segment and group the information (Age Brackets).
+The bike_buys sheet underwent data cleaning and some minor corrections, using value replacement to ensure data consistency. From there, the information was migrated to a new tab, and the IF function was used to better segment and group the information (Age Brackets).
 Next, pivot tables and charts for possible comparisons and insights were created in another sheet to give us an idea of ​​what was being worked on.
 Finally, the dashboard was built, emphasizing the charts on income, age categorization, and their usual bike commute distance. Filters were added for marital status, home ownership, number of vehicles owned, region of residence, and, finally, their education level.
 
