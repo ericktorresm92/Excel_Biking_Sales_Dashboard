@@ -14,23 +14,66 @@ Explore whether income or home ownership influences the decision to purchase a b
 
 ## Methods
 A practice dataset containing the following columns was used:
-#### ID 
-#### Marital status 
-#### Gender 
-#### Income 
-#### Children 
-#### Education 
-#### Occupation 
-#### Homeownership 
-#### Cars 
-#### Travel distance 
-#### Region 
-#### Age 
-#### Bicycle purchased
+- ID
+- Marital Status
+- Gender
+- Income
+- Children
+- Education
+- Occupation
+- Home Owner
+- Cars
+- Commute Distance
+- Region
+- Age
+- Purchased Bike
 
-The bike_buys sheet underwent data cleaning and some minor corrections, using value replacement to ensure data consistency. From there, the information was migrated to a new tab, and the IF function was used to better segment and group the information (Age Brackets).
-Next, pivot tables and charts for possible comparisons and insights were created in another sheet to give us an idea of ​​what was being worked on.
-Finally, the dashboard was built, emphasizing the charts on income, age categorization, and their usual bike commute distance. Filters were added for marital status, home ownership, number of vehicles owned, region of residence, and, finally, their education level.
+### Techniques Applied:
+
+#### Removing Duplicates:
+Duplicates were removed from the dataset, a total of 26 duplicates were removed.
+
+#### Find and Replace:
+The columns for marital status and sex (gender) were replaced; instead of a single letter, they were replaced with the entire word.
+
+#### Creating Age Ranges:
+Here, compound IF statements were used to create age ranges for further study. For example: =IF(L2>=65, "65 +", (IF(L2>=40, "40-64", IF(L2>=18, "18-39", IF(L2<=17, "Adolescent", "Other")))))
+
+#### Creating Pivot Tables:
+The following pivot tables were created:
+
+- Average Income per Purchase:
+Here, the goal is to understand whether average income affects bicycle purchases, as well as whether gender affects them.
+![image](https://drive.google.com/file/d/1mvJ16VuOOtNobv_WskjBPlr07v2PrLVK/view?usp=sharing)
+
+- Travel Distance per Client:
+Here, the daily distance and how many of these clients travel these distances are studied, to see if this affected the purchase of a bicycle or not.
+![image](https://drive.google.com/file/d/1lSvlUm6b5EFLol3XqT-NfzauGpyc8A7Z/view?usp=sharing)
+
+- Age range per client:
+In this table, the age range created by the IFs and the count of how many of these clients there were were taken, to determine if this affected the purchase.
+![image](https://drive.google.com/file/d/1YJyfdyDkyA4Wchav6vaRtrKQHSQz_ToB/view?usp=sharing)
+
+- Panel creation:
+From the pivot tables, the following graphs were created:
+
+- Average Income per Purchase:
+![image](https://drive.google.com/file/d/155ZbCiFNV8uahYJRA4d39K_24ajU__rb/view?usp=sharing)
+
+- Travel Distance per Client:
+![image](https://drive.google.com/file/d/1fnoR8BSqO3n2SCuBhkNUDhZ5epHBItyz/view?usp=sharing)
+
+- Age range per client:
+![image](https://drive.google.com/file/d/1IhWV3ieQ86tVJnkZOXV_I8zlB69ziUHh/view?usp=sharing)
+
+From here, the panel was created, which included the following filters:
+- Marital status
+- Whether the client owns a home
+- Whether the client owns a vehicle
+- The client's region of origin
+- Their educational level.
+
+![image](https://drive.google.com/file/d/1OgYEIoQP86eYNA1wc2pGynHXt1jmUcWl/view?usp=sharing)
 
 ## Results and conclusions
 ### Conclusions:
@@ -53,6 +96,3 @@ For long distances, offer electric bicycles or more comfortable models.
 3. Product Differentiation:
 Design campaigns focused on recreational or health cycling to attract customers in the 65+ age group.
 Focus on more affordable bicycle models for short urban commutes.
-
-## Dashboard
-![image](https://github.com/ericktorresm92/privateimages/blob/main/Screenshot%202025-03-29%20123525.jpg?raw=true)
